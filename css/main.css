@@ -462,6 +462,9 @@ body {
           left: 50%;
           top: 55%;
           width: 80%; } }
+      @media (min-width: 1920px) {
+        .main-header .con .caption {
+          left: 21%; } }
       .main-header .con .caption h2 {
         font-size: 48px;
         color: white;
@@ -507,6 +510,9 @@ body {
       @media (max-width: 768px) {
         .main-header .con .owl-dots {
           left: 18.5%; } }
+      @media (min-width: 1920px) {
+        .main-header .con .owl-dots {
+          top: 60%; } }
       @media (max-width: 480px) {
         .main-header .con .owl-dots {
           display: none; } }
