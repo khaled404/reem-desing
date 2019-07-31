@@ -569,7 +569,7 @@ body {
         .main-header .con .owl-nav .owl-next span {
           color: #FFF;
           font-size: 25px;
-          display: block; }
+          line-height: 1; }
     .main-header .con .owl-next {
       position: absolute;
       left: -54px; }

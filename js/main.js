@@ -1,11 +1,21 @@
 $(function(){
     AOS.init();
-    $('.search-icon ,.search-overlay .close').on('click',function () {
+    $('.search-icon ,.search-overlay,.search-overlay .close').on('click',function () {
         $('.search-overlay').toggleClass('active');
         $('body').toggleClass('overflow');
     })
 
-    $('.sm-nav ,.side-nav .close').on('click',function () {
+    $('.search-overlay .close').on('click',function () {
+        $('.search-overlay').toggleClass('active');
+        $('body').toggleClass('overflow');
+    })
+
+    
+    $('.search-overlay .form ').on('click',function (e) {
+        e.stopPropagation()
+    })
+
+    $('.sm-nav ,.side-nav .close ').on('click',function () {
         $('.side-nav').toggleClass('nav-active');
         $('body').toggleClass('overflow');
     })
