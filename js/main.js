@@ -1,5 +1,4 @@
 $(function(){
-    AOS.init();
     $('.search-icon ,.search-overlay,.search-overlay .close').on('click',function () {
         $('.search-overlay').toggleClass('active');
         $('body').toggleClass('overflow');
