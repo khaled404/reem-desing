@@ -1,8 +1,8 @@
 $(function(){
-    $(".loading").fadeOut(400,function () {
+    $(".loading").fadeOut(1000,function () {
         $(this).remove();
     });
-
+    new WOW().init();
     $('.search-icon ,.search-overlay,.search-overlay .close').on('click',function () {
         $('.search-overlay').toggleClass('active');
         $('body').toggleClass('overflow');
