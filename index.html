@@ -15,6 +15,10 @@
     <link rel="shortcut icon" type="img/png" href="images/logo.png">
   </head>
   <body>
+    <!--loading screen-->
+    <div class="loading">
+      <div class="loder"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
     <!--strat navbar-->
     <div class="search-overlay">
       <div class="close"><i class="fas fa-times"></i></div>
@@ -28,7 +32,7 @@
         <div class="close"><i class="fas fa-times"></i></div>
         <div class="lang"><a href="#">ع</a></div>
       </div>
-      <ul class="nav-link list-unstyled"> 
+      <ul class="mynav-link list-unstyled"> 
         <li><a href="#">Home</a></li>
         <li><a href="#">About us</a></li>
         <li class="drop"><a data-toggle="collapse" href="#drop" role="button" aria-expanded="false" aria-controls="drop">our Services</a>
@@ -113,7 +117,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="desing-contint"><img src="images/titel.png" alt="titel">
+            <div class="desing-contint"><img class="titel-img" src="images/titel.png" alt="titel">
+              <div class="img-box"><img class="img-fluid" src="images/desing.jpg" alt="desing img"></div>
               <p>We specialize in providing interior design services in both residential and commercial projects. Offering high quality modern designs, managed by highly qualified team. We are here to find innovative design concepts and solutions, to create new environments that meet present needs </p><a href="#">Read more</a>
             </div>
           </div>
@@ -155,43 +160,111 @@
     <section class="works">
       <div class="container">
         <h2>our works</h2>
-        <div class="img-container"><a class="bic bic-big" href="#"><img src="images/work01.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work02.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work03.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work04.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work05.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-big" href="#"><img src="images/work06.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-big" href="#"><img src="images/work07.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work08.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a><a class="bic bic-sm" href="#"><img src="images/work09.jpg" alt="">
-            <div class="overlay">
-              <h3>Duplex Villa</h3>
-              <p>Exterior Design</p>
-            </div></a></div>
+        <div class="img-container">
+          <div class="bic bic-big"><a href="#"><img src="images/work01.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work02.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work03.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work04.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work05.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-big"><a href="#"><img src="images/work06.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-big"><a href="#"><img src="images/work07.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work08.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+          <div class="bic bic-sm"><a href="#"><img src="images/work09.jpg" alt="">
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div></a></div>
+        </div>
+        <div class="img-container2">
+          <div class="owl-carousel owl-theme">
+            <div class="bic"><a href="#"><img src="images/work03.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work02.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work01.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work04.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work05.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work06.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work07.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work08.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+            <div class="bic"><a href="#"><img src="images/work09.jpg" alt=""></a>
+              <div class="overlay">
+                <h3>Duplex Villa</h3>
+                <p>Exterior Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!--Contact-->
@@ -225,6 +298,12 @@
         <div class="footer-content">
           <div class="footer-logo"><img src="images/footer-logo.ong.png" alt=""></div>
           <div class="cope">
+            <ul class="footer-icon list-unstyled">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
             <p>Copyright © REEM DESIGN 2018, All rights reserved - <span>Designed & Developed by<a href="#"><img src="images/tasawk-en2.png" alt=""></a></span></p>
           </div>
         </div>
