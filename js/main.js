@@ -62,7 +62,6 @@ $(function(){
 
 
     $('.works .owl-carousel').owlCarousel({
-
         autoHeight:true,
         autoplay: true,
         rtl:true,
@@ -94,8 +93,6 @@ $(function(){
     });
     //map
     var adresse = "<img style='width:50px; text-align: left; display:inline-block; margin-right: 10px; vertical-align: sub;' src='img/logofooter.png'> <div style='display:inline-block;'>Blackstone<br>0540000000<br>info@blackstone.sa</div>";
-
-
     var location = [adresse[0], $("#map").attr("lat"), $("#map").attr("long")];
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -122,11 +119,4 @@ $(function(){
             infowindow.open(map, marker);
         }
     })(marker));
-    var arr = [1, 2, 3];
-    var j;
-    for (j = 0; j < arr.length; j++) {
-        console.log(arr[j]);
-    }
-
-
 });
