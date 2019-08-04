@@ -1318,7 +1318,7 @@ footer {
           align-items: center; }
   @media (max-width: 991px) {
     footer {
-      min-height: 170px; } }
+      min-height: 190px; } }
   footer .footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
