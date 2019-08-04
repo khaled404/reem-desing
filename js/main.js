@@ -83,8 +83,15 @@ $(function(){
             },
         },
     });
-    
-
+    //to top
+    $(window).on('scroll', function(e){
+        $(window).scrollTop()>30 ? $('.to-top').addClass('show'):$('.to-top').removeClass('show');
+    })  
+    $('.to-top').on('click',function(){
+        $("html,body").animate({
+            scrollTop: 0
+        }, 600);
+    });
     //map
     var adresse = "<img style='width:50px; text-align: left; display:inline-block; margin-right: 10px; vertical-align: sub;' src='img/logofooter.png'> <div style='display:inline-block;'>Blackstone<br>0540000000<br>info@blackstone.sa</div>";
 
